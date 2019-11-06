@@ -2,6 +2,7 @@ import com.graph.Vertex;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertNotSame;
 
 public class TestVetex
 {
@@ -21,4 +22,21 @@ public class TestVetex
 
     }
 
+    @Test
+    public void testVertexNotEqual()
+    {
+
+        Vertex<String> tokyo = new Vertex<String>(TOKYO);
+        Vertex<String> marrakesh= new Vertex<String>(MARRAKECH);
+
+        assertNotSame(tokyo,marrakesh);
+    }
+    @Test
+    public void testVerteciesEqual()
+    {
+        Vertex<String> marrakesh= new Vertex<String>(MARRAKECH);
+        Vertex<String> essaouira= new Vertex<String>(MARRAKECH);
+
+        assertEquals(marrakesh,essaouira);
+    }
 }

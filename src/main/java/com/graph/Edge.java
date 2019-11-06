@@ -1,6 +1,6 @@
 package com.graph;
 
-public class Edge<T>
+public class Edge<T> extends Object
 {
     Vertex<T> vertexLeft, vertexRight;
     double weight = 0.0;
@@ -22,5 +22,67 @@ public class Edge<T>
 
         }
         this.sens = sens;
+    }
+
+    @Override
+    public boolean equals(Object obj)
+    {
+        Edge cast;
+        if(obj==null)
+        {
+            return false;
+        }
+        else
+        {
+            cast = (Edge) obj;
+            if (isDirect)
+            {
+
+                return vertexLeft.equals(cast.vertexLeft) && vertexRight.equals(cast.vertexRight)
+                        && sens == cast.getSens();
+            }
+            else
+            {
+                return (vertexLeft.equals(cast.vertexLeft) && vertexRight.equals(cast.vertexRight))
+                        || (vertexLeft.equals(cast.vertexRight) && vertexRight.equals(cast.vertexLeft));
+            }
+        }
+
+    }
+
+    public Vertex<T> getVertexLeft()
+    {
+
+        return vertexLeft;
+    }
+
+    public Vertex<T> getVertexRight()
+    {
+
+        return vertexRight;
+    }
+
+    public double getWeight()
+    {
+
+        return weight;
+    }
+
+    public boolean isDirect()
+    {
+
+        return isDirect;
+    }
+
+    public boolean isWeighted()
+    {
+
+        return isWeighted;
+    }
+
+    public Sens getSens()
+    {
+
+        return sens;
     }
 }

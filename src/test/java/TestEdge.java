@@ -4,6 +4,7 @@ import com.graph.Sens;
 import com.graph.Vertex;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 public class TestEdge
@@ -45,6 +46,25 @@ public class TestEdge
         catch (EdgeException e)
         {
             throw e;
+        }
+    }
+    @Test
+    public void testEdgeEqualityUndirectEdge()
+    {
+        Vertex<String> marrakesh= new Vertex<String>(MARRAKESH);
+        Vertex<String> berlin= new Vertex<String>(BERLIN);
+
+        try
+        {
+            Edge<String> marrakeshToBerlin=new Edge<String>(marrakesh,berlin,0.0,
+                    false,false, Sens.undirected);
+            Edge<String> berlinToMarrakesh=new Edge<String>(berlin,marrakesh,0.0,
+                    false,false, Sens.undirected);
+            assertEquals(marrakeshToBerlin,berlinToMarrakesh);
+        }
+        catch (EdgeException e)
+        {
+            System.out.println(e.getMessage());
         }
     }
 }

@@ -1,6 +1,6 @@
 package com.graph;
 
-public class Vertex<T>
+public class Vertex<T> extends Object
 {
     T name;
 
@@ -17,5 +17,13 @@ public class Vertex<T>
         return name;
     }
 
-
+    @Override
+    public boolean equals(Object obj)
+    {
+        if(obj!=null && obj instanceof Vertex)
+        {
+            return ((Vertex)obj).name.equals(this.name);
+        }
+        return false;
+    }
 }
