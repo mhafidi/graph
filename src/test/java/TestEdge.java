@@ -6,9 +6,11 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNotSame;
 
 public class TestEdge
 {
+    private static final String PARIS = "Paris";
     final String MARRAKESH="Marrakech";
     final String BERLIN="Berlin";
 
@@ -61,6 +63,27 @@ public class TestEdge
             Edge<String> berlinToMarrakesh=new Edge<String>(berlin,marrakesh,0.0,
                     false,false, Sens.undirected);
             assertEquals(marrakeshToBerlin,berlinToMarrakesh);
+        }
+        catch (EdgeException e)
+        {
+            System.out.println(e.getMessage());
+        }
+    }
+    @Test
+    public void testEdgeNotEqualUndirectEdge()
+    {
+
+        Vertex<String> marrakesh= new Vertex<String>(MARRAKESH);
+        Vertex<String> berlin= new Vertex<String>(BERLIN);
+        Vertex<String> paris= new Vertex<String>(PARIS);
+
+        try
+        {
+            Edge<String> marrakeshToBerlin=new Edge<String>(marrakesh,berlin,0.0,
+                    false,false, Sens.undirected);
+            Edge<String> marrakeshToCasablanca=new Edge<String>(marrakesh,paris,0.0,
+                    false,false, Sens.undirected);
+            assertNotSame(marrakeshToBerlin,marrakeshToCasablanca);
         }
         catch (EdgeException e)
         {
