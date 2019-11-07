@@ -1,4 +1,4 @@
-package com.graph;
+package com.graph.com.org;
 
 public class EdgeException extends Exception
 {

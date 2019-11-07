@@ -1,4 +1,4 @@
-import com.graph.Vertex;
+import com.graph.com.org.Vertex;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;

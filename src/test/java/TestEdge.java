@@ -1,7 +1,7 @@
-import com.graph.Edge;
-import com.graph.EdgeException;
-import com.graph.Sens;
-import com.graph.Vertex;
+import com.graph.com.org.Edge;
+import com.graph.com.org.EdgeException;
+import com.graph.com.org.Sens;
+import com.graph.com.org.Vertex;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

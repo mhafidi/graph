@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="bbded261-422d-4502-8fa0-35db4fc68a2b" name="NoCommit" comment="" />
-    <list default="true" id="21dc1bd3-e579-4c47-9299-fa0b4b41dd63" name="Default" comment="-Adding Test Not Equality feature for edge">
+    <list default="true" id="21dc1bd3-e579-4c47-9299-fa0b4b41dd63" name="Default" comment="-Adding Interfaces">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/graph/com/IEdge.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/graph/com/IGraph.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/graph/com/org/Graph.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/graph/undirect/unweighted/UndirectedUnWeightedEdge.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/graph/undirect/unweighted/UndirectedUnWeightedGraph.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/graph/Graph.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/graph/Edge.java" afterPath="$PROJECT_DIR$/src/main/java/com/graph/com/org/Edge.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/graph/EdgeException.java" afterPath="$PROJECT_DIR$/src/main/java/com/graph/com/org/EdgeException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/graph/Sens.java" afterPath="$PROJECT_DIR$/src/main/java/com/graph/com/org/Sens.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/graph/Vertex.java" afterPath="$PROJECT_DIR$/src/main/java/com/graph/com/org/Vertex.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestEdge.java" afterPath="$PROJECT_DIR$/src/test/java/TestEdge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestVetex.java" afterPath="$PROJECT_DIR$/src/test/java/TestVetex.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,41 +29,58 @@
   <component name="ChangesViewManager" flattened_view="false" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="18" column="10" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Vertex.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/Vertex.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Edge.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/Edge.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/com/org/Edge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1196">
-              <caret line="46" column="104" lean-forward="false" selection-start-line="46" selection-start-column="104" selection-end-line="46" selection-end-column="104" />
+            <state relative-caret-position="104">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <element signature="method#getVertexLeft#0;class#Edge#0" expanded="false" />
+                <element signature="method#getVertexRight#0;class#Edge#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IEdge.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/com/IEdge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UndirectedUnWeightedEdge.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/undirect/unweighted/UndirectedUnWeightedEdge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#473#474#0" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IGraph.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/com/IGraph.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="507">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Graph.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/Graph.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/com/org/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            <state relative-caret-position="520">
+              <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,8 +88,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="UndirectedUnWeightedGraph.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/undirect/unweighted/UndirectedUnWeightedGraph.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="EdgeException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/EdgeException.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/com/org/EdgeException.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="312">
               <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
@@ -71,7 +109,7 @@
         </entry>
       </file>
       <file leaf-file-name="Sens.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/Sens.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/com/org/Sens.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
               <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
@@ -80,69 +118,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <markdownNavigatorState />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TestVetex.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestVetex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
+            <state relative-caret-position="559">
               <caret line="39" column="42" lean-forward="false" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#895#903#0" expanded="true" />
+                <element signature="e#903#911#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AllTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AllTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/AllTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            <state relative-caret-position="312">
+              <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestEdge.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestEdge.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="85" column="65" lean-forward="false" selection-start-line="85" selection-start-column="44" selection-end-line="85" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#529#537#0" expanded="true" />
-                <element signature="e#591#599#0" expanded="true" />
-                <element signature="e#683#691#0" expanded="true" />
-                <element signature="method#testEdgeConstructionWithException#0;class#TestEdge#0" expanded="false" />
-                <element signature="e#1093#1101#0" expanded="true" />
-                <element signature="e#1155#1163#0" expanded="true" />
-                <element signature="e#1247#1255#0" expanded="true" />
-                <element signature="e#1570#1578#0" expanded="true" />
-                <element signature="e#1632#1640#0" expanded="true" />
-                <element signature="e#1724#1732#0" expanded="true" />
-                <element signature="e#1857#1865#0" expanded="true" />
-                <element signature="e#2226#2234#0" expanded="true" />
-                <element signature="e#2288#2296#0" expanded="true" />
-                <element signature="e#2346#2354#0" expanded="true" />
-                <element signature="e#2437#2445#0" expanded="true" />
-                <element signature="e#2574#2582#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,6 +149,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -186,11 +182,21 @@
         <option value="$PROJECT_DIR$/src/main/java/com/Graph.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Vertex.java" />
         <option value="$PROJECT_DIR$/src/test/java/AllTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/graph/Graph.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/graph/Vertex.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/graph/Edge.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestVetex.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestEdge.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/graph/GraphCol.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/graph/UndirectedUnWeightedGraph.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/graph/ColEdge.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/graph/UndirectedUnWeightedEdge.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/graph/IEdge.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/graph/Edge.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/graph/IGraph.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/graph/undirect/unweighted/UndirectedUnWeightedEdge.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/graph/Graph.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/graph/undirect/unweighted/UndirectedUnWeightedGraph.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/graph/com/org/Edge.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/graph/com/org/Graph.java" />
       </list>
     </option>
   </component>
@@ -264,6 +270,48 @@
               <item name="graph" type="b2602c69:ProjectViewProjectNode" />
               <item name="graph" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
+              <item name="undirect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
+              <item name="undirect" type="462c0819:PsiDirectoryNode" />
+              <item name="unweighted" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -285,6 +333,12 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../qcode/generatedCode/generalcompiledcode" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.graph" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -489,9 +543,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AllTests - 2019.11.05 at 00h 39m 18s.xml">
-      <configuration name="AllTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AllTests - 2019.11.05 at 00h 43m 29s.xml">
       <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
@@ -505,6 +556,9 @@
       <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="AllTests - 2019.11.06 at 17h 00m 18s.xml">
+      <configuration name="AllTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AllTests - 2019.11.07 at 15h 30m 30s.xml">
       <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestEdge_testEdgeEqualityUndirectEdge - 2019.11.06 at 14h 24m 02s.xml">
@@ -558,7 +612,8 @@
     <MESSAGE value="first Commit" />
     <MESSAGE value="-Adding Equality feature to Vertex&#10;-Adding Equality feature to Edge&#10;-Adding Test of Equality of Vertex and Edge" />
     <MESSAGE value="-Adding Test Not Equality feature for edge" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Adding Test Not Equality feature for edge" />
+    <MESSAGE value="-Adding Interfaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Adding Interfaces" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -573,7 +628,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/Vertex.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/com/org/Vertex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
@@ -581,25 +636,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/Edge.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/com/org/Edge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="20" column="105" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="105" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#getVertexLeft#0;class#Edge#0" expanded="false" />
+            <element signature="method#getVertexRight#0;class#Edge#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/EdgeException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/com/IGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/com/org/EdgeException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
@@ -607,7 +663,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/Sens.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/com/org/Sens.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
@@ -634,7 +690,7 @@
           <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#895#903#0" expanded="true" />
+            <element signature="e#903#911#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -655,22 +711,22 @@
           <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#529#537#0" expanded="true" />
-            <element signature="e#591#599#0" expanded="true" />
-            <element signature="e#683#691#0" expanded="true" />
+            <element signature="e#561#569#0" expanded="true" />
+            <element signature="e#623#631#0" expanded="true" />
+            <element signature="e#715#723#0" expanded="true" />
             <element signature="method#testEdgeConstructionWithException#0;class#TestEdge#0" expanded="false" />
-            <element signature="e#1093#1101#0" expanded="true" />
-            <element signature="e#1155#1163#0" expanded="true" />
-            <element signature="e#1247#1255#0" expanded="true" />
-            <element signature="e#1570#1578#0" expanded="true" />
-            <element signature="e#1632#1640#0" expanded="true" />
-            <element signature="e#1724#1732#0" expanded="true" />
-            <element signature="e#1857#1865#0" expanded="true" />
-            <element signature="e#2226#2234#0" expanded="true" />
-            <element signature="e#2288#2296#0" expanded="true" />
-            <element signature="e#2346#2354#0" expanded="true" />
-            <element signature="e#2437#2445#0" expanded="true" />
-            <element signature="e#2574#2582#0" expanded="true" />
+            <element signature="e#1125#1133#0" expanded="true" />
+            <element signature="e#1187#1195#0" expanded="true" />
+            <element signature="e#1279#1287#0" expanded="true" />
+            <element signature="e#1602#1610#0" expanded="true" />
+            <element signature="e#1664#1672#0" expanded="true" />
+            <element signature="e#1756#1764#0" expanded="true" />
+            <element signature="e#1889#1897#0" expanded="true" />
+            <element signature="e#2258#2266#0" expanded="true" />
+            <element signature="e#2320#2328#0" expanded="true" />
+            <element signature="e#2378#2386#0" expanded="true" />
+            <element signature="e#2469#2477#0" expanded="true" />
+            <element signature="e#2606#2614#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -704,56 +760,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/Sens.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/EdgeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/Vertex.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/com/org/Vertex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/Edge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1196">
-          <caret line="46" column="104" lean-forward="false" selection-start-line="46" selection-start-column="104" selection-end-line="46" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestVetex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="39" column="42" lean-forward="false" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#895#903#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -763,32 +774,116 @@
           <caret line="85" column="65" lean-forward="false" selection-start-line="85" selection-start-column="44" selection-end-line="85" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#529#537#0" expanded="true" />
-            <element signature="e#591#599#0" expanded="true" />
-            <element signature="e#683#691#0" expanded="true" />
+            <element signature="e#561#569#0" expanded="true" />
+            <element signature="e#623#631#0" expanded="true" />
+            <element signature="e#715#723#0" expanded="true" />
             <element signature="method#testEdgeConstructionWithException#0;class#TestEdge#0" expanded="false" />
-            <element signature="e#1093#1101#0" expanded="true" />
-            <element signature="e#1155#1163#0" expanded="true" />
-            <element signature="e#1247#1255#0" expanded="true" />
-            <element signature="e#1570#1578#0" expanded="true" />
-            <element signature="e#1632#1640#0" expanded="true" />
-            <element signature="e#1724#1732#0" expanded="true" />
-            <element signature="e#1857#1865#0" expanded="true" />
-            <element signature="e#2226#2234#0" expanded="true" />
-            <element signature="e#2288#2296#0" expanded="true" />
-            <element signature="e#2346#2354#0" expanded="true" />
-            <element signature="e#2437#2445#0" expanded="true" />
-            <element signature="e#2574#2582#0" expanded="true" />
+            <element signature="e#1125#1133#0" expanded="true" />
+            <element signature="e#1187#1195#0" expanded="true" />
+            <element signature="e#1279#1287#0" expanded="true" />
+            <element signature="e#1602#1610#0" expanded="true" />
+            <element signature="e#1664#1672#0" expanded="true" />
+            <element signature="e#1756#1764#0" expanded="true" />
+            <element signature="e#1889#1897#0" expanded="true" />
+            <element signature="e#2258#2266#0" expanded="true" />
+            <element signature="e#2320#2328#0" expanded="true" />
+            <element signature="e#2378#2386#0" expanded="true" />
+            <element signature="e#2469#2477#0" expanded="true" />
+            <element signature="e#2606#2614#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/com/org/Sens.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestVetex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="39" column="42" lean-forward="false" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#903#911#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/com/org/EdgeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/undirect/unweighted/UndirectedUnWeightedGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/com/org/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AllTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="312">
+          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/com/IGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/com/IEdge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/com/org/Edge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="method#getVertexLeft#0;class#Edge#0" expanded="false" />
+            <element signature="method#getVertexRight#0;class#Edge#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/undirect/unweighted/UndirectedUnWeightedEdge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
           </folding>
         </state>
       </provider>

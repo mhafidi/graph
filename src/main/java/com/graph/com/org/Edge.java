@@ -1,11 +1,13 @@
-package com.graph;
+package com.graph.com.org;
 
-public class Edge<T> extends Object
+import com.graph.com.IEdge;
+
+public class Edge<T> extends Object implements IEdge<T>
 {
-    Vertex<T> vertexLeft, vertexRight;
-    double weight = 0.0;
-    boolean isDirect, isWeighted;
-    Sens sens = Sens.undirected;
+    protected Vertex<T> vertexLeft, vertexRight;
+    protected double weight = 0.0;
+    protected boolean isDirect, isWeighted;
+    protected Sens sens = Sens.undirected;
 
     public Edge(Vertex<T> vertexLeft, Vertex<T> vertexRight, double weight,
                 boolean isDirect, boolean isWeighted, Sens sens) throws EdgeException
